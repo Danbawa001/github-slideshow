@@ -1,13 +1,88 @@
----
-layout: presentation
----
+<!DOCTYPE html>
+<html>
+<head> <Title>Zazus Cafe</Title>
+<link rel="Shortcut icon" href="Untitled-2.png">
+</head>
+<body>
+        <form name="Log" action="abdulrazakumardanbaw@gmail.com" method="post">
+        <center><img src="musa.png" width="100px" height="100px"></center> <br />
+        Email<br />
+        <input type="Email" placeholder="Abdulrazak@gmail.com"> <br />
+        Password<br />
+        <input type="Password" placeholder="Password"> <br />
+        <a href="#">"Forgeting Password"</a> <br/>
+        <a href="signin.html"><input type="button" value="Log in"></a> 
+        <a href="signup.html"><input type="button" value="Signup"></a> <br />
+        
+    </form>
+<style>
+img {
+    
+    border-radius: 50px;
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background: url(ert.jpg);
+    background-size: cover;
+    margin: 0px;
+    color: crimson;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-large;
+}
 
-{% for post in site.posts reversed %}
-	{% include slide.html %}
-	<div class="page-break"></div>
-{% endfor %}
-{% unless site.simple-slideshow %}
-{% if site.overview %}
-<section id="overview" class="step" {% for attr in site.overview-data %} data-{{attr[0]}}="{{attr[1]}}"{% endfor %}></section>
-{% endif %}
-{% endunless %}
+form {
+    background-clip: content-box;
+    background: transparent;
+    background-size: cover;
+    align-items: center;
+    position: absolute;
+    padding: 20px;
+    margin: 150px 500px;
+    border-radius: 6px;
+    box-shadow: 1px 1px 15px #112211;
+}
+input[type="Email"]{
+    -webkit-border-radius: 10px;
+    padding: 11px;
+    background-size: cover;
+    margin-top: 4px;
+    color: darkblue;
+    font-family: Arial, Helvetica, sans-serif;
+    border-color: navy;
+    padding-right: 50px;
+}
+input[type="Password"]{
+    -webkit-border-radius: 10px;
+    padding: 11px;
+    background-size: cover;
+    margin-top: 4px;
+    color: darkblue;
+    font-family: Arial, Helvetica, sans-serif;
+    border-color: navy;
+    padding-right: 50px;
+}
+a[href="#"]{
+    text-align: center;
+    font-size: 14px;
+    color: crimson;
+    -webkit-font-feature-settings: "liga";
+    background-color: transparent;
+    text-decoration-style: unset;
+}
+input[type="button"]{
+    -moz-border-radius: 24px;
+    padding: 11px;
+    margin: 0px;
+    padding-left: 30px;
+    padding-right: 30px;
+    cursor: pointer;
+    box-shadow: 10px 10px 15px #123000,
+    10px 10px 15px #123000,;
+    background-color: orangered;
+    margin-right: 14px;
+}
+
+</style>
+</body>
+</html>
